@@ -2,6 +2,7 @@ body {
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 400;
     // font-size: 16px;
+    font-size: $default-font-size;
     line-height: 1.7;
     color: $color-grey-dark;
     padding: 3rem;
@@ -15,20 +16,62 @@ body {
 
     &--main {
         display: block;
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 35px;
+        letter-spacing: 3.5rem;
     
         animation: moveInLeft 1s ease-in-out forwards;
     }
     
     &--sub {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 17.4px;
+        letter-spacing: 1.74rem;
     
         animation: moveInRight 1s ease-in-out forwards;
         
     }
 }
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-primary-dark;
+    letter-spacing: 2px;
+
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
